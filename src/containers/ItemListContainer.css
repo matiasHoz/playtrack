@@ -1,0 +1,8 @@
+#saludo {
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+#saludo:hover {
+    cursor: pointer;
+}

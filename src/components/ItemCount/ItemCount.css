@@ -1,0 +1,61 @@
+#contenedor {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px black;
+    background-color: #350149;
+    justify-content: center;
+}
+
+#sumar {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 37px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#sumar:hover {
+    cursor: pointer;
+}
+
+#restar {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 37px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#restar:hover {
+    cursor: pointer;  
+}
+
+#agregar {
+    font-size: 25px;
+    margin: 20px;
+    padding: 5px;
+    font-family: 'Dongle', sans-serif;
+    box-shadow: 3px 3px 3px black;
+}
+
+#agregar:hover {
+    cursor: pointer;
+}
+
+#numero {
+    text-shadow: 2px 2px 2px black;
+}
+
+#contador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+#tick {
+    font-size: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}

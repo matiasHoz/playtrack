@@ -1,0 +1,67 @@
+.producto2 {
+    margin: 30px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #350149;
+    width: 600px;
+    box-shadow: 3px 3px 3px black;
+    justify-content: center;
+}
+
+
+#masinfo {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+.imagen22 {
+    width: 500px;
+    height: 300px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+#stock {
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+#buy {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#buy:hover {
+    cursor: pointer;
+}
+
+#count {
+    margin-top: 300px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #350149;
+    height: 220px;
+    width: 200px;
+    box-shadow: 3px 3px 3px black;
+    justify-content: center;
+}
+
+.terminar {
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.terminar:hover {
+    cursor: pointer;
+}
+
+#id1 {
+    visibility: hidden;
+}

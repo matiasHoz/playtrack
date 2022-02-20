@@ -1,0 +1,11 @@
+.carrito {
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+    padding: 7px;
+    box-shadow: 3px 3px 3px black;
+    position: relative;
+    top: 6px;
+}

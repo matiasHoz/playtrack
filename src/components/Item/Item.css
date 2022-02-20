@@ -1,0 +1,41 @@
+.producto {
+    margin: 30px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: #350149;
+    width: 220px;
+    box-shadow: 3px 3px 3px black;
+}
+
+#name {
+    font-size: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+#picture {
+    width: 140px;
+    height: 205px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 3px 3px 3px black;
+}
+
+#picture:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#price {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#det {
+    margin: 10px;
+    padding: 5px;
+}
+
+#det:hover {
+    cursor: pointer;
+}

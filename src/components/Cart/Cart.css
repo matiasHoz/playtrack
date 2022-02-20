@@ -1,0 +1,70 @@
+#carro {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+}
+
+.carrito:hover {
+    cursor: pointer;
+}
+
+
+.cantid {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: center;
+    width: 200px;
+    bottom: 215px;
+    left: 32px;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    right: 300px;
+    position: relative;
+    width: 200px;
+    height: 190px;
+    padding: 30px;
+    background-color: #350149;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: white;
+    margin-bottom: 100px;
+}
+
+.fotis {
+    height: 180px;
+    width: 200px;
+    justify-content: center;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: white;
+    position: relative;
+    right: 103px;
+}
+
+#eliminar {
+    height: 28px;
+    width: 28px;
+    bottom: 20px;
+    position: relative;
+    right: 20px;
+}
+
+#eliminar:hover {
+    cursor: pointer;
+}
+
+#precioo {
+    position: relative;
+    left: 47px;
+}
+
+#nohay {
+    margin-bottom: 400px;
+}

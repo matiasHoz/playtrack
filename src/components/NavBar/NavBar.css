@@ -1,0 +1,119 @@
+.menu {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-gap: 100px;
+    justify-content: center;
+    border-style: solid;
+    background-color: #350149;
+    padding: 20px;
+    border-radius: 20px;
+    height: 50px;
+    justify-content: center;
+    width: 1150px;
+    font-size: 25px;
+    list-style: none;
+    box-shadow: 3px 3px 3px black;
+    text-decoration: none;
+    position: sticky;
+    margin-bottom: 0px !important;
+}
+
+.op {
+    width: 150px;
+    font-family: 'Graduate', cursive;
+    font-size: 18px;
+    margin-top: 12px;
+    border-style: solid;
+    height: 20px;
+    background-color: black;
+    border-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.op:hover {
+    cursor: pointer;
+    color: #8220a9;
+    text-decoration: none;
+    list-style: none;
+}
+
+.perro {
+    width: 55px;
+    height: 55px;
+    -webkit-filter: drop-shadow(2px 1px 0 black)
+	                drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(2px 1px 0 black)
+            drop-shadow(-1px -1px 0 black);
+}
+
+#logo {
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Dongle', sans-serif;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    text-decoration: none;
+}
+
+#logo:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#borrar{
+    padding: 10px;
+    display: flex;
+    justify-self: flex-start;
+    position: relative;
+    height: 50px;
+    width: 70px;
+    bottom: 160px;
+    left: 730px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#borrar:hover {
+    cursor: pointer;
+}
+
+#carro1 {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    left: 490px;
+    bottom: 100px;
+    position: relative;
+    height: 10px;
+    width: 200px;
+}
+
+.cantid2 {
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+.lista1 {
+        display: flex;
+        flex-direction: column;
+}
+
+#numerito {
+    color: white;
+    position: relative;
+    bottom: 187px;
+    left: 840px;
+}
