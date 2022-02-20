@@ -47,8 +47,7 @@ useEffect(() => {
 
 }, [idCategoria])
 
-console.log(idCategoria)
-console.log(productos)
+
 
     
 
@@ -60,33 +59,3 @@ console.log(productos)
     )
 }
 
-/*if (idCategoria) {
-    getDocs(queryCollection)
-    .then(resp => setProductos( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))
-    }else {
-    getDocs(queryFiltro)
-    .then(resp => setProductos( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))
-    }
-
-    getDoc(itemRef)
-    .then(resp => setProducto( {id: resp.id, ...resp.data() } ))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))*/
-
-
-
-    /*if (idCategoria) {
-        task
-        .then(resolve => setProductos(resolve.filter(producto => producto.categoria === idCategoria)))
-        .catch(error => console.log(error))
-        .finally(() => setLoading(false))    
-    }else {
-    task
-    .then(resolve => setProductos(resolve))
-    .catch(error => console.log(error))
-    .finally(() => setLoading(false))
-    }*/

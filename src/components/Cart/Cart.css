@@ -68,3 +68,14 @@
 #nohay {
     margin-bottom: 400px;
 }
+
+#comprando {
+    position: relative;
+    bottom: 400px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#comprando:hover {
+    cursor: pointer;
+}
