@@ -53,7 +53,7 @@ useEffect(() => {
 
     return (
         <div id="listado">
-            { loading ? <><section id="cargando"><img src="/img/disk.gif" alt="disco" id="disk"></img><h2 id="cargar">Cargando...</h2></section></> : 
+            { loading ? <><section id="cargando"><img src="/img/disk.gif" alt="disco" id="disk"></img><h2 id="cargar">Cargando...</h2></section></> :
             productos.map( (producto) => <Item key={producto.id} nombre={producto.name} picture={producto.pictureUrl} precio={producto.price} detalle="Ver detalle" productos={producto}/>)}
         </div>
     )

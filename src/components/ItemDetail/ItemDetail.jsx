@@ -8,7 +8,7 @@ import "./ItemDetail.css";
 export const ItemDetail = ( propi ) => {
 
     const [ numero, setNumero ] = useState(0);
-    const {cart, sumarProducto} = useContext(cartContext);
+    const {sumarProducto} = useContext(cartContext);
 
 
     function onAdd(cantidad) {
@@ -16,7 +16,6 @@ export const ItemDetail = ( propi ) => {
         sumarProducto({...propi, cantidad: cantidad})
     }
 
-    console.log(cart)
 
     return (
         <>

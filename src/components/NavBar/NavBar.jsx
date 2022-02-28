@@ -14,20 +14,20 @@ export let NavBar = () => {
         <div>
         <nav>
             <ul className="menu">
-                <Link to="/">
+                <Link className="op1" to="/">
                 <li id="logo"><img src="/img/perritocumbia.png" alt="perrito" className="perro"></img>Playtrack</li>
                 </Link>
-                <Link to="/categoria/novedades">
+                <Link className="op1" to="/categoria/novedades">
                 <li className="op">Novedades</li>
                 </Link>
-                <Link to="/categoria/promociones">
+                <Link className="op1" to="/categoria/promociones">
                 <li className="op">Promociones</li>
                 </Link>
-                <Link to="/categoria/exitos">
+                <Link className="op1" to="/categoria/exitos">
                 <li className="op">Éxitos</li>
                 </Link>
-                <Link to="/cart">
-                <CartWidget />
+                <Link className="op1" to="/cart">
+                <div id="carrit"><CartWidget /></div>
                 </Link>
                 <h4 id="numerito">{cantidadTotal() !== 0 && cantidadTotal()}</h4>
                 <button id="borrar" onClick={borrarProducto}>Vaciar carrito</button>

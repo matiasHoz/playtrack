@@ -1,0 +1,29 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 80px;
+    list-style: none;
+    background-color: #350149;
+    width: 1309px;
+    height: 80px;
+    position: relative;
+    top: 30px;
+    border-top-style: solid;
+}
+
+.ops {
+    text-shadow: 3px 3px 3px black;
+    font-family: 'Graduate', cursive;
+    padding: 10px;
+}
+
+.ops:hover {
+    cursor: pointer;
+    color: darkgray;
+}
+
+.sinLink {
+    text-decoration: none;
+    color: white;
+}

@@ -8,44 +8,51 @@
     cursor: pointer;
 }
 
+#borde {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+}
+
 
 .cantid {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     position: absolute;
     justify-content: center;
     width: 200px;
-    bottom: 215px;
-    left: 32px;
+    bottom: 237px;
+    left: 70px;
+    text-shadow: 3px 3px 3px black;
 }
 
 .lista {
+    margin: 50px;
     display: grid;
     grid-template-columns: 100px 100px;
-    right: 300px;
     position: relative;
-    width: 200px;
-    height: 190px;
+    width: 280px;
+    height: 210px;
     padding: 30px;
     background-color: #350149;
     justify-content: center;
     border-style: solid;
     border-radius: 20px;
     border-color: white;
-    margin-bottom: 100px;
+    left: 11px;
 }
 
 .fotis {
     height: 180px;
-    width: 200px;
+    width: 230px;
     justify-content: center;
     margin-top: 10px;
     border-style: solid;
     border-color: white;
     position: relative;
-    right: 103px;
+    right: 117px;
+    box-shadow: 3px 3px 3px black;
 }
 
 #eliminar {
@@ -53,7 +60,7 @@
     width: 28px;
     bottom: 20px;
     position: relative;
-    right: 20px;
+    right: 60px;
 }
 
 #eliminar:hover {
@@ -62,11 +69,14 @@
 
 #precioo {
     position: relative;
-    left: 47px;
+    left: 50px;
+    bottom: 22px;
+    text-shadow: 3px 3px 3px black;
 }
 
 #nohay {
     margin-bottom: 400px;
+    text-shadow: 3px 3px 3px black;
 }
 
 #comprando {
@@ -74,8 +84,50 @@
     bottom: 400px;
     padding: 20px;
     font-size: 20px;
+    box-shadow: 3px 3px 3px black;
 }
 
 #comprando:hover {
     cursor: pointer;
+}
+
+#total {
+    font-size: 50px;
+    border-style: solid;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #350149;
+    text-shadow: 3px 3px 3px black;
+}
+
+#formu {
+    background-color: #350149;
+    border-radius: 20px;
+    bottom: 40px;
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    height: 280px;
+    border-style: solid;
+    border-color: white;
+}
+
+.espacio {
+    width: 300px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#finalizar {
+    text-shadow: 3px 3px 3px black;
+}
+
+.terminar {
+    box-shadow: 3px 3px 3px black;
+}
+
+#suid {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #350149;
 }

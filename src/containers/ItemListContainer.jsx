@@ -3,12 +3,11 @@ import { ItemList } from "../components/ItemList/ItemList";
 import "./ItemListContainer.css";
 
 
-export const ItemListContainer = (prop) => {
+export const ItemListContainer = () => {
 
 
     return(
         <>
-        <h1 id="saludo">{prop.greeting}</h1>
         <ItemList />
         </>
     )

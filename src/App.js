@@ -6,6 +6,10 @@ import { ItemListContainer } from './containers/ItemListContainer';
 import { ItemDetailContainer } from './containers/ItemDetailContainer/ItemDetailContainer';
 import { CartContextProvider } from './context/cartContext/cartContext';
 import { Cart } from './components/Cart/Cart';
+import { Footer } from './components/Footer/Footer';
+import { Contacto } from './components/Contacto/Contacto';
+import { Nosotros } from './components/Nosotros/Nosotros';
+import { Imagen } from "./components/image/image";
 
 
 
@@ -24,7 +28,11 @@ function App() {
           <Route exact path="/categoria/:idCategoria/detail/:idProducto" element={<ItemDetailContainer/>} />
           <Route exact path="/detail/:idProducto" element= {<ItemDetailContainer/>} />
           <Route exact path="/cart" element= {<Cart />} />
+          <Route exact path="/contacto" element= {<Contacto />} />
+          <Route exact path="/nosotros" element= {<Nosotros />} />
+          <Route exact path="/proximamente" element= {<Imagen />} />
         </Routes>
+        <Footer />
       </header>
     </div>
     </BrowserRouter >

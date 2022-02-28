@@ -11,7 +11,7 @@ export const Cart = () => {
     const [ idCompra, setIdCompra ] = useState("")
     const [ dataForm, setDataForm ] = useState({ email: "", phone: "", name: ""})
 
-    const { cart, precioTotal, borrarUno } = useContext(cartContext);
+    const { cart, precioTotal, borrarUno, borrarProducto } = useContext(cartContext);
 
     const hacerCompra = async (e) => {
         e.preventDefault()
@@ -48,48 +48,48 @@ export const Cart = () => {
             [event.target.name]: event.target.value 
         })
     }
-
-    console.log(cart)
-    console.log(dataForm)
     
 
     return (
         <>
         <div id="carro">
-        {cart.length !== 0 ? <>
-        {cart.map((selec1, selec2) => <div key={selec2}>
+        {cart.length !== 0 ?
+        <>
+        {cart.map((selec1, selec2) => <div id="borde" key={selec2}>
         <ul className='lista'>
         <button id="eliminar" onClick={() => borrarUno(selec1.id)}>X</button>
         <img src={selec1.img} alt="dune" className="fotis"></img>
         <h3 id="precioo">${selec1.precio}</h3>
         <li className='cantid'> {selec1.cantidad}x 
          {selec1.titulo}</li></ul></div>)}
-        <h2>Precio: {precioTotal()}</h2>
+        <h2 id="total">Precio: ${precioTotal()}</h2>
         <br/>
-        <form onSubmit={hacerCompra}>
-            <input type="text" name="name" placeholder="name"
+        <form id="formu" onSubmit={hacerCompra}>
+            <h4 id="finalizar">¡Último paso!</h4>
+            <input className='espacio' type="text" name="name" placeholder="Nombre"
             onChange={handleChange}
             value={dataForm.name}/>
         <br/>
-            <input type="number" name="phone" placeholder="cel"
+            <input className='espacio' type="number" name="phone" placeholder="Celular"
             onChange={handleChange}
             value={dataForm.phone}/>
         <br/>
-            <input type="email" name="email" placeholder="email"
+            <input className='espacio' type="email" name="email" placeholder="Email"
             onChange={handleChange}
             value={dataForm.email}/>
         <br />
-            <input type="email" name="confirmarEmail" placeholder="Confirmar Email"
+            <input className='espacio' type="email" name="confirmarEmail" placeholder="Confirmar Email"
             onChange={handleChange}
             />
         <br/>
-        <button>Realizar pedido</button>
+        <button className="terminar">Hacer pedido</button>
+        <button className="terminar" onClick={borrarProducto}>Finalizar</button>
         </form>
-        {idCompra !== "" && `su id de compra es: ${idCompra}`}
+        {idCompra !== "" && <p id="suid">Su ID de compra es: {idCompra}</p>}
         </>
         :
         <>
-        <h1 id="nohay">No hay productos</h1> 
+        <h1 id="nohay">No hay productos todavía...</h1> 
         <Link to="/">
         <button id="comprando">Ir a comprar</button>
         </Link>

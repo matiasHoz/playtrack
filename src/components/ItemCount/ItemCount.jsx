@@ -24,7 +24,6 @@ export const ItemCount = ( {stock, initial, onAdd} ) => {
 
     const Carrito = () => {
         onAdd(count)
-        console.log(count)
     }
 
     return (

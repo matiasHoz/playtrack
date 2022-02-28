@@ -16,9 +16,12 @@ const informacion = [{  id: "1", nombre: "House of Gucci", description:"Una mira
 {id: "9", nombre: "A Star is Born", description: "Jackson, una estrella de la música country con problemas de alcoholismo, descubre el talento de Ally, una joven cantante de la cual se enamora. Mientras la carrera de ella despega, Jackson percibe que sus días de gloria están llegando a su fin.", imageUrl:"/img/aStar2.jpg", stock: 10, precio: 1200, categoria: "exitos"},
 {id: "10", nombre: "Spider-Man ITSV", description: "Luego de ser mordido por una araña radioactiva, el joven Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.", imageUrl: "/img/itsv2.jpg", stock: 5, precio: 1400, categoria: "exitos"},
 {id: "11", nombre: "Dune", description: "Arrakis, también denominado Dune, se ha convertido en el planeta más importante del universo. A su alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar.", imageUrl: "/img/dune2.webp", stock: 16, precio: 1200, categoria: "exitos"},
-{id: "12", nombre: "Tick Tick Boom", description:"Jon es un aspirante a compositor de obras teatrales que, a punto de cumplir 30 años, se siente abrumado por la ansiedad, preguntándose si su sueño merece la pena.", imageUrl: "/img/tick2.webp", stock: 20, precio: 1500, categoria: "exitos"}]
+{id: "12", nombre: "Tick Tick Boom", description:"Jon es un aspirante a compositor de obras teatrales que, a punto de cumplir 30 años, se siente abrumado por la ansiedad, preguntándose si su sueño merece la pena.", imageUrl: "/img/tick2.webp", stock: 20, precio: 1500, categoria: "exitos"},
+{id: "13", nombre: "The Batman", description: "En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia.", imageUrl: "/img/theBatman2.jpg"},
+{id: "14", nombre: "Licorice Pizza", description: "Alana Kane y Gary Valentine inician sus primeros pasos vacilantes en el amor en el Valle de San Fernando, California, en 1973.", imageUrl: "/img/licorice2.jpeg"},
+{id: "15", nombre: "The Kingsman", description: "Un grupo formado por los tiranos y las mentes criminales más malvadas de la historia se une para desencadenar una guerra que matará a millones de personas."}]
 
-const desafio = new Promise ((resolve, reject) => {
+    new Promise ((resolve, reject) => {
     let condition= true;
     setTimeout(() => {
     if (condition){
@@ -45,30 +48,14 @@ useEffect(() => {
     .then(resp => setInfo( [ {id: resp.id, ...resp.data()}] ))
     .catch(err => console.log(err))
     .finally(() => setLoading(false))
-
-
-
-    /*if (idProducto) {
-    desafio
-    .then(res => setInfo(res.filter(rey => rey.id === idProducto)))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))
-    } else {
-    desafio
-    .then(res => setInfo(res))
-    .catch(err => console.log(err))
-    .finally(() => setLoading(false))
-    }*/
 }, [idProducto])
-
-console.log(idProducto)
-console.log(info)
-console.log(desafio)
 
 
    return (
        <div className='segundoOrden'>
-           { loading ? <><section id="cargando"><img src="/img/disk.gif" alt="disco" id="disk"></img><h2 id="cargar">Cargando...</h2></section></> :
+           { loading ? 
+           <><section id="cargando"><img src="/img/disk.gif" alt="disco" id="disk"></img><h2 id="cargar">Cargando...</h2></section></> 
+           :
            info.map( (rey) => <ItemDetail key={rey.id} id={rey.id} titulo= {rey.nombre} descrip={rey.description} img={rey.imageUrl} total={rey.stock} precio={rey.precio} />)}
        </div>
    )
