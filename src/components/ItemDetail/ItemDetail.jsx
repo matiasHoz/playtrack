@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { useContext, useState } from 'react/cjs/react.development';
+import React, { useContext, useState } from 'react/cjs/react.development';
 import { cartContext } from '../../context/cartContext/cartContext';
 import { ItemCount } from '../ItemCount/ItemCount';
 import "./ItemDetail.css";
